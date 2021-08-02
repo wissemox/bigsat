@@ -12,7 +12,6 @@ const MapProduct02 = ({el}) => {
            
             <div >
                 <div style={{width:"300px"}} >
-            <img style={{width:"100px" , height:"100px"}}  src={process.env.PUBLIC_URL +`/uploads/${el.Image}` }/>
             <img style={{width:"100px" , height:"100px"}}  src={el.Image02}/>
 
             </div>
