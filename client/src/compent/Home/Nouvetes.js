@@ -11,7 +11,8 @@ const Nouvetes = () => {
         { width: 550, itemsToShow: 2 },
         { width: 608, itemsToShow: 3 },
         { width: 700, itemsToShow: 4 },
-        { width: 800, itemsToShow: 5 },
+        { width: 800, itemsToShow: 6 },
+        { width: 2000, itemsToShow: 10 },
       ];
       
     return (
@@ -19,7 +20,7 @@ const Nouvetes = () => {
             <p>Nouveaux Produits</p>
               <Carousel className="px-10" breakPoints={breakPoints}>
                 
-            {Product.slice(1).reverse().map((el)=><CarouselMap el={el}/>)}
+            {Product.reverse().map((el)=><CarouselMap el={el}/>)}
         
             </Carousel>
         </div>

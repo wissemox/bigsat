@@ -18,9 +18,9 @@ const AdminDashBoard01 = () => {
      
         <div className="DisplayFLexBoxAdmin">
               <BrowserRouter>
-              <AppBar style={{backgroundColor:"#1F2649",width:"150px"}} position="sticky">
+              <AppBar style={{backgroundColor:"#1F2649",width:"200px",height:"900px"  }} className="postionSticky">
 
-         <Link to="/Admin/dashboard"> <p> Product</p></Link> 
+         <Link to="/Admin/dashboard"> <p className="text-center	"> Product</p></Link> 
        
            </AppBar>
            <div className="NavBarAdmin">

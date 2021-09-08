@@ -34,8 +34,9 @@ const Contact = () => {
            <DenseAppBar  MenuTogel={MenuTogel}/>
            <TogelMenu01 TogelMenu={TogelMenu}/>
            </AppBar>
-                <div className="py-10 pl-20" style={{backgroundColor:"#F0F2F5",height:"500px"}}>
-                    <Box boxShadow={5} style={{backgroundColor:"#FFFFFF",width:"800px" , height:"400px",marginLeft:"15%" ,paddingLeft:"20%" , paddingTop:"5%"}} className="ml-90 ">
+                <div className="py-10 pl-20 flex" style={{backgroundColor:"#F0F2F5",height:"610px" , justifyContent:"center" }}>
+                    <Box >
+                    <Box boxShadow={5} style={{backgroundColor:"#FFFFFF" , height:"400px" ,paddingLeft:"20%" , paddingTop:"5%" , marginTop:"10%"}} className="ml-90 w800TestRespoive ">
                     <div className="flex mb-10">
                     <ContactMailIcon style={{color:"#1F2649" ,fontSize:"50px"}}/> 
                     <p className="pl-10 pt-2">bigsat102@bigsat.com.tn</p>
@@ -49,9 +50,11 @@ const Contact = () => {
                         <p className="pl-10 pt-2">4 av al anouar</p>
                     </div>
                     </Box>
+                    </Box>
                    
                 </div>
          </div>
+         
         </div>
     )
 }

@@ -6,29 +6,22 @@ const Schema = mongoose.Schema
 const ProductSchema = new Schema({
     Name:{
         type:String,
-        required: true,
-        unique:true
 
     },
     Prix:{
         type:Number,
-        required: true
     },
     Catgory:{
         type:String , 
-        require:true
     },
     Descraption:{
         type:String , 
     },
     Image:{
         type:String,
-        required: true,
-        unique:true
     },
     Image02:{
         type:String , 
-        require:true,
     }
    
 }); 

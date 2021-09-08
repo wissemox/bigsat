@@ -42,7 +42,7 @@ const RecharcheBar = () => {
                <Box data-Aos="fade"  className="mb-2 mt-2" >  
                 </Box>
                 <Box data-Aos="fade"   className="mb-2 mt-2 pl-10 flex"> 
-                <img style={{width:"80px" , marginRight:"50px"}} src={process.env.PUBLIC_URL +`/uploads/${el.Image}` }/>
+                <img style={{width:"80px" , marginRight:"50px"}} src={el.Image02}/>
 
                 <p  data-Aos="fade-left"  style={{width:"150px"}} >{el.Name}</p>
                 <p  data-Aos="fade-left" style={{width:"100px"}} className="pl-20 hiddenCompenetRecherBar" >{el.Prix}</p>

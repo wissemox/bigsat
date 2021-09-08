@@ -28,6 +28,10 @@ code {
 .bg-red{
   background-color: #EA545F;
 }
+.postionSticky{
+  position: sticky;
+  top: 0;
+}
 .color-blue{
  color: #4165AE;
 }

@@ -4,6 +4,8 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import AlarmIcon from '@material-ui/icons/Alarm';
 import {Link} from 'react-router-dom'
+import { saveAs } from 'file-saver';
+
 const ProductMap = ({el , i}) => {
     // Rate Function here 
     const[Rate , setRate]=useState(1)

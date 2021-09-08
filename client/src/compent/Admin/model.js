@@ -2,6 +2,7 @@ import React, { useState , useEffect } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import {useDispatch,useSelector} from 'react-redux'
 import TextField from '@material-ui/core/TextField';
+import { saveAs } from 'file-saver';
 
 import {AddProudct , CatgoriesAdd} from '../../compent/js/action/authActions'
 const ModalExample = (props) => {
@@ -40,23 +41,16 @@ const[Test , Tesdft]=useState()
 console.log(file)
 
 
-  
-
-
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
   const Tefse =async ()=>{
     const base64=await converbase64(file)
     console.log(base64)
-    formData.append('Catgory',Catgory)
-  formData.append('articleImage',file)
-  formData.append('Name',Name)
-  formData.append('Prix',prix)
-  formData.append('Descraption',Descraption)
-  formData.append('Image02',base64)
+   
+
   dispatch(CatgoriesAdd({name:Catgory}))
-  dispatch(AddProudct(formData))
+  dispatch(AddProudct({Name:Name , Image02:base64 ,Descraption:Descraption , Catgory:Catgory , Prix:prix}))
   setModal(!modal)
     
   }

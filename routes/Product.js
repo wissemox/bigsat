@@ -45,7 +45,25 @@ router.post('/Produc',upload.single("articleImage"),async(req,res)=>{
   
   
 })
+router.post('/productADD02',async(req,res)=>{
+   const {Name}=req.body 
+   const {Descraption}=req.body
+   const{Prix} =req.body
+   const{Catgory} =req.body
+   const {Image02}=req.body
+   try{
+      if(!Image02 ||!Name || !Descraption || !Prix || !Catgory   ) {
+         return res.json({msg:"entre all filed"})
+      }
+      const ProductAdd = new Product({Name ,Descraption , Image02  ,Prix , Catgory  ,Image:Math.random()  }); 
+       await ProductAdd.save();
+       return res.json({msg:"Product add"})
 
+   }catch(error){
+      console.log(error)
+   }
+
+})
 
 router.get('/Produc',async(req,res)=>{
   

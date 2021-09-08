@@ -9,6 +9,9 @@
     .hiddenCompenetRecherBar{
         display: flex;
     }
+    .w800TestRespoive{
+        width: 800px;
+     }
 }
 /*    .marginLeftResposive01{
       margin-left: 10%;
@@ -65,7 +68,9 @@
         -webkit-transition: 2s;
         margin-left: 50px;
     }
- 
+    .w800TestRespoive{
+        width: 400px;
+     }
     
  }
 @media screen and (max-width: 600px){
@@ -82,6 +87,9 @@
     .Resposive02{
         margin-left: 35px;
     }
+    .w800TestRespoive{
+        width: 350px;
+     }
    
 }
 .ClickHover:hover{

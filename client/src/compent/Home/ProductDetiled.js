@@ -19,7 +19,7 @@ const ProductDetiled = ({match}) => {
             {Product&&Product.filter((catgorie)=>catgorie.Name==match).map((el)=>
                 <div data-Aos="fade-left" className="flex"> 
                  <div style={{marginLeft:"10%",marginTop:"50px"} }> 
-                 <img data-Aos="fade-left" className="rounded-3xl"  data-Aos="fade-left"  style={{width:"400px" ,height:"400px"}} src={process.env.PUBLIC_URL +`/uploads/${el.Image}` }/>
+                 <img data-Aos="fade-left" className="rounded-3xl"  data-Aos="fade-left"  style={{width:"400px" ,height:"400px"}} src={el.Image02}/>
                  </div>
                  <div data-Aos="fade-left" style={{backgroundColor:"#F2F2F2",color:"#1F2649" }} className="mt-14 text-xl 			">
                      <div style={{width:"300px"}} className="ml-10 mr-10 mt-10" >

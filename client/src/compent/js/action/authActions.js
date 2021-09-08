@@ -112,7 +112,7 @@ export const ProductUser = () => async dispatch =>{
 export const AddProudct = (formdata) => async dispatch =>{
    
     try{
-        const res = await axios.post('/api/Product/Produc',formdata);
+        const res = await axios.post('/api/Product/productADD02',formdata);
         dispatch(ProductUser())
     }catch(error){
         console.log(error)
